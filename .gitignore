@@ -1,0 +1,6 @@
+# Composer stuff
+vendor/
+bin/
+
+# Phpstorm
+.idea/
