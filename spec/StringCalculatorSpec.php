@@ -59,4 +59,12 @@ class StringCalculatorSpec extends ObjectBehavior
     {
         $this->add("//;\n1;2")->shouldReturn(3);
     }
+
+    /**
+     * should throw exception on negative number
+     */
+    function it_should_throw_exception_on_negative_number()
+    {
+        $this->shouldThrow('InvalidArgumentException')->duringAdd('1,-2');
+    }
 }
